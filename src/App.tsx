@@ -148,9 +148,69 @@ export default function App() {
         )}
       </div>
 
-      {/* Footer */}
-      <footer style={{ borderTop: '1px solid #F3F4F6', padding: '20px 24px', textAlign: 'center' }}>
-        <p style={{ fontSize: 11, color: '#D1D5DB', margin: 0, lineHeight: 1.8 }}>
+      {/* 参考站点 */}
+      <footer style={{ borderTop: '1px solid #F3F4F6', padding: '24px', textAlign: 'center', background: '#FAFAFA' }}>
+        <details style={{ textAlign: 'left', maxWidth: 640, margin: '0 auto' }}>
+          <summary style={{ fontSize: 13, fontWeight: 700, color: '#6B7280', cursor: 'pointer', userSelect: 'none', padding: '4px 0' }}>
+            🌍 {lang === 'zh' ? '参考站点 Reference Sites' : 'Reference Sites'}
+          </summary>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 8, marginTop: 12 }}>
+            {[
+              // 🌍 世界 & 亚洲
+              { cat: '🌏 亚洲', name: '世界壁球联合会 WSF', url: 'https://www.worldsquash.org' },
+              { cat: '🌏 亚洲', name: '亚洲壁球联合会 ASF', url: 'https://www.asiansquash.org' },
+              { cat: '🌏 亚洲', name: '中国壁球协会 CSA', url: 'https://www.squash.org.cn' },
+              { cat: '🌏 亚洲', name: '香港壁球总会 HKSA', url: 'https://www.hksquash.org.hk' },
+              { cat: '🌏 亚洲', name: '新加坡壁球协会', url: 'https://www.squashsingapore.com' },
+              { cat: '🌏 亚洲', name: '马来西亚壁球协会', url: 'https://www.myss.com.my' },
+              { cat: '🌏 亚洲', name: '澳门壁球总会', url: 'https://www.macsq.org' },
+              { cat: '🌏 亚洲', name: '卡塔尔壁球协会', url: 'https://www.qatarsquash.com' },
+              { cat: '🌏 亚洲', name: '巴基斯坦壁球协会', url: 'https://www.pfsf.com.pk' },
+              { cat: '🌏 亚洲', name: '印度壁球协会', url: 'https://www.squashindia.com' },
+              { cat: '🌏 亚洲', name: '日本壁球联盟', url: 'https://www.jsquash.or.jp' },
+              { cat: '🌏 亚洲', name: '韩国壁球协会', url: 'https://www.koreasquash.org' },
+              { cat: '🌏 亚洲', name: '阿联酋壁球协会', url: 'https://www.emiratesquash.com' },
+              { cat: '🌏 亚洲', name: '沙特壁球联合会', url: 'https://www.sauquash.com' },
+              // 🏝️ 大洋洲
+              { cat: '🏝️ 大洋洲', name: '澳大利亚壁球协会', url: 'https://www.squash.org.au' },
+              { cat: '🏝️ 大洋洲', name: '新西兰壁球协会', url: 'https://www.squashnz.co.nz' },
+              // 🇪🇺 欧洲
+              { cat: '🇪🇺 欧洲', name: '欧洲壁球联合会 ESF', url: 'https://www.europeansquash.com' },
+              { cat: '🇪🇺 欧洲', name: '英国壁球协会', url: 'https://www.englandsquash.org' },
+              { cat: '🇪🇺 欧洲', name: '法国壁球联合会', url: 'https://www.ffsquash.fr' },
+              { cat: '🇪🇺 欧洲', name: '德国壁球协会', url: 'https://www.squash-verband.de' },
+              { cat: '🇪🇺 欧洲', name: '荷兰壁球协会 NSF', url: 'https://squash.nl' },
+              { cat: '🇪🇺 欧洲', name: '波兰壁球协会 PZF', url: 'https://polskisquash.pl' },
+              // 🌍 非洲
+              { cat: '🌍 非洲', name: '埃及壁球协会', url: 'https://www.egyptiansquash.com' },
+              // 🌎 美洲
+              { cat: '🌎 美洲', name: '美国壁球协会 US Squash', url: 'https://www.ussquash.org' },
+            ].map(site => (
+              <a
+                key={site.url}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  fontSize: 11,
+                  color: '#3B82F6',
+                  textDecoration: 'none',
+                  padding: '4px 8px',
+                  borderRadius: 6,
+                  background: '#FFFFFF',
+                  border: '1px solid #E5E7EB',
+                  display: 'block',
+                  transition: 'all 0.15s',
+                }}
+                onMouseEnter={e => (e.currentTarget.style.borderColor = '#3B82F6')}
+                onMouseLeave={e => (e.currentTarget.style.borderColor = '#E5E7EB')}
+              >
+                {site.name}
+              </a>
+            ))}
+          </div>
+        </details>
+        <p style={{ fontSize: 11, color: '#D1D5DB', margin: '16px 0 0', lineHeight: 1.8 }}>
           {t.sourceNote}
           <br />
           {t.sourceHint}
