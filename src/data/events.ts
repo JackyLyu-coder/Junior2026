@@ -409,7 +409,7 @@ export const events: SquashEvent[] = [
   },
 
   // ══════════════════════════════════════════════════════════════
-  // 🇨🇳 国家级 — 全国U系列青少年壁球赛
+  // 🇨🇳 地区级 — 全国U系列青少年壁球赛（名称含城市名）
   // ══════════════════════════════════════════════════════════════
   {
     id: 'u001',
@@ -464,6 +464,19 @@ export const events: SquashEvent[] = [
     website: 'https://www.sport.gov.cn',
   },
   {
+    id: 'nat-002',
+    name: '全国壁球公开赛',
+    nameEn: 'National Squash Open',
+    level: 'national',
+    location: '浙江绍兴',
+    startDate: '2026-04-01',
+    endDate: '2026-05-31',
+    registrationDeadline: null,
+    description: '国家体育总局小球中心主办的全国最高级别壁球赛事，设成年组及青少年各组别，2026年由绍兴珠江体育文化发展有限公司承办。来源：国家体育总局小球中心 2026年1月赛历公告。',
+    organizer: '国家体育总局小球中心 · 绍兴珠江体育文化发展有限公司',
+    website: 'https://www.sport.gov.cn',
+  },
+  {
     id: 'u004',
     name: '全国壁球青少年U系列赛（第四站）',
     nameEn: 'National Youth Squash U-Series — Stop 4',
@@ -511,7 +524,7 @@ export const events: SquashEvent[] = [
     id: 'sh-001',
     name: '上海市青少年壁球锦标赛',
     nameEn: 'Shanghai Youth Squash Championship',
-    level: 'club',
+    level: 'regional',
     location: '上海',
     startDate: null,
     endDate: null,
@@ -524,7 +537,7 @@ export const events: SquashEvent[] = [
     id: 'sh-002',
     name: '上海青少年壁球公开赛',
     nameEn: 'Shanghai Junior Squash Open',
-    level: 'club',
+    level: 'regional',
     location: '上海',
     startDate: null,
     endDate: null,
@@ -538,7 +551,7 @@ export const events: SquashEvent[] = [
     id: 'sz-001',
     name: '深圳壁球公开赛（青少年组）',
     nameEn: 'Shenzhen Squash Open — Junior Division',
-    level: 'club',
+    level: 'regional',
     location: '广东深圳',
     startDate: '2026-03-28',
     endDate: '2026-03-29',
