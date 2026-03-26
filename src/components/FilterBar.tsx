@@ -6,6 +6,7 @@ type Filter = 'all' | EventLevel
 const FILTERS = (lang: Locale) => [
   { value: 'all' as Filter, label: lang === 'zh' ? '全部' : 'All' },
   { value: 'national' as Filter, label: lang === 'zh' ? '国家级' : 'National' },
+  { value: 'regional' as Filter, label: lang === 'zh' ? '地区级' : 'Regional' },
   { value: 'asian' as Filter, label: lang === 'zh' ? '亚洲级' : 'Asian' },
   { value: 'international' as Filter, label: lang === 'zh' ? '其他国' : 'International' },
   { value: 'club' as Filter, label: lang === 'zh' ? '俱乐部' : 'Club' },

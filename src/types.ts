@@ -1,4 +1,4 @@
-export type EventLevel = 'national' | 'asian' | 'international' | 'club'
+export type EventLevel = 'national' | 'regional' | 'asian' | 'international' | 'club'
 export type EventStatus = 'upcoming' | 'ongoing' | 'past' | 'tbd'
 
 export interface SquashEvent {

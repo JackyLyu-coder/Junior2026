@@ -392,6 +392,23 @@ export const events: SquashEvent[] = [
   },
 
   // ══════════════════════════════════════════════════════════════
+  // 🇨🇳 市级 — 北京市体育大会壁球比赛
+  // ══════════════════════════════════════════════════════════════
+  {
+    id: 'bjfd-001',
+    name: '第18届北京市体育大会壁球比赛（第一站）',
+    nameEn: '18th Beijing Sports Congress Squash Tournament (Stop 1)',
+    level: 'regional',
+    location: '北京·灵动壁球中心（马泉营店）',
+    startDate: '2026-04-11',
+    endDate: '2026-04-11',
+    registrationDeadline: null,
+    description: '北京市壁球界年度盛事，由SSC壁球俱乐部主办。设多组别，赛制：各组报名3-5人采用循环赛，6-16人采用小组循环+附加赛；11分制，三局两胜。第二站、第三站时间另行通知。',
+    organizer: 'SSC壁球俱乐部',
+    website: 'https://mp.weixin.qq.com/s/g11aQQ24Mk9jFNDoXkL5vw',
+  },
+
+  // ══════════════════════════════════════════════════════════════
   // 🇨🇳 国家级 — 全国U系列青少年壁球赛
   // ══════════════════════════════════════════════════════════════
   {
@@ -403,21 +420,21 @@ export const events: SquashEvent[] = [
     startDate: '2026-03-20',
     endDate: '2026-03-22',
     registrationDeadline: '2026-03-14',
-    description: '2026赛季全国青少年U系列赛首站，设U9至U19六个组别，166名青少年选手参赛。',
+    description: '2026赛季全国青少年U系列赛首站，设U9至U19六个组别，166名青少年选手参赛（已结束）。',
     organizer: '国家体育总局小球中心',
     website: 'https://www.sport.gov.cn',
   },
   {
     id: 'u002',
-    name: '全国壁球青少年U系列赛（第二站）',
-    nameEn: 'National Youth Squash U-Series — Stop 2',
+    name: '全国壁球青少年U系列赛（第二站·北京）',
+    nameEn: 'National Youth Squash U-Series — Stop 2 (Beijing)',
     level: 'national',
-    location: '北京',
+    location: '北京·梦响壁球中心',
     startDate: '2026-05-01',
     endDate: '2026-05-03',
-    registrationDeadline: null,
-    description: '第二站落地北京，华北地区青少年选手汇聚。',
-    organizer: '国家体育总局小球中心',
+    registrationDeadline: '2026-04-20',
+    description: '第二站落地北京，设U9/U11/U13/U15/U17/U19六个组别，限40人/组（按积分+报名顺序录取）。每站成绩计入全国青少年壁球积分，影响年终排名。来源：国家体育总局小球中心 2026年U系列赛竞赛总规程（2026年3月5日发布）。',
+    organizer: '国家体育总局小球中心 · 北京梦响传奇体育发展有限公司',
     website: 'https://www.sport.gov.cn',
   },
   {

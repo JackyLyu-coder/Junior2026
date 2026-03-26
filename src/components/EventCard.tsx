@@ -3,6 +3,7 @@ import type { Locale } from '../i18n'
 
 const LEVEL_CONFIG = {
   national: { label: { zh: '国家级', en: 'National' }, color: '#DC2626' },
+  regional: { label: { zh: '地区级', en: 'Regional' }, color: '#7C3AED' },
   asian:    { label: { zh: '亚洲级', en: 'Asian' },    color: '#D97706' },
   international: { label: { zh: '其他国', en: 'International' }, color: '#2563EB' },
   club:     { label: { zh: '俱乐部', en: 'Club' },     color: '#6B7280' },
